@@ -1,0 +1,112 @@
+.
+├── cmd
+│   └── service
+├── docs
+│   ├── api-docs
+│   └── architecture
+│       ├── decisions
+│       └── usecases
+│           └── img
+├── internal
+│   ├── domain
+│   │   ├── errors
+│   │   ├── model
+│   │   │   ├── event
+│   │   │   └── outbox
+│   │   └── service
+│   ├── infrastructure
+│   │   ├── analytikapublisher
+│   │   ├── database
+│   │   ├── dynamodb
+│   │   ├── eventconsumer
+│   │   │   ├── kafka
+│   │   │   └── sqs
+│   │   ├── eventproducer
+│   │   │   └── kafka
+│   │   ├── galileo
+│   │   ├── httpResponse
+│   │   ├── xxtoken
+│   │   ├── pacttests
+│   │   ├── profiler
+│   │   ├── router
+│   │   ├── test
+│   │   │   ├── assertion
+│   │   │   ├── dynamodbtestinfra
+│   │   │   ├── file
+│   │   │   ├── kafkatestinfra
+│   │   │   └── mysqltestinfra
+│   │   ├── timeutil
+│   │   └── workerpool
+│   ├── interface
+│   │   ├── consumers
+│   │   │   ├── xxxeventhandler
+│   │   │   ├── xxxoperationalhourshandler
+│   │   │   ├── xxxcancellationhandler
+│   │   │   ├── xxxupdateeventhandler
+│   │   │   └── xxxbackfillinghandler
+│   │   ├── controller
+│   │   │   ├── errors
+│   │   │   ├── event
+│   │   │   ├── eventreason
+│   │   │   ├── middleware
+│   │   │   ├── order
+│   │   │   └── requestcontext
+│   │   ├── gateway
+│   │   │   ├── xxxservice
+│   │   │   ├── xxxservice
+│   │   ├── producers
+│   │   │   ├── kafkaproducer
+│   │   │   │   ├── orderdomainevent
+│   │   │   │   └── orderupdateevent
+│   │   │   └── sqs
+│   │   │       └── orderautocancellation
+│   │   └── repository
+│   │       ├── address
+│   │       ├── addresscache
+│   │       ├── city
+│   │       ├── delivery
+│   │       ├── event
+│   │       ├── eventreason
+│   │       ├── order
+│   │       ├── ordernote
+│   │       ├── outbox
+│   │       └── owner
+│   ├── registry
+│   └── usecase
+│       ├── event
+│       ├── fetchorder
+│       ├── generateinvoice
+│       ├── order
+│       ├── orderaddress
+│       ├── ordernote
+│       ├── outbox
+│       │   ├── job
+│       │   ├── orderdomain
+│       │   └── orderupdate
+│       └── promotion
+├── ops
+│   ├── bin
+│   ├── config
+│   ├── contract
+│   ├── docker
+│   ├── pipelines
+│   └── terraform
+│       ├── dynamodb
+│       └── infra_alerts
+├── resources
+│   ├── configs
+│   └── database
+│       └── migrations
+├── scripts
+│   └── migrate-xxx-v1
+└── tests
+    ├── acceptance
+    ├── ci
+    └── resources
+        ├── avroschemas
+        │   ├── orderevent
+        │   └── testevent
+        └── eventpayload
+            ├── xxxcountryxx
+            ├── xxxdelivery
+            └── xxxupdate
