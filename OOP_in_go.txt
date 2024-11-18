@@ -1,0 +1,7 @@
+1. Encapsulation (data hiding): in contrast to other OO languages where there are four or more access-levels, Go simplifies this to only two levels:
+  package scope: object is only known in its package, it starts with a lowercase letter
+  exported: object is visible outside of its package because it starts with an uppercase letter. A type can only have methods defined in its package.
+
+2. Inheritance: via composition that is embedding of 1 (or more) type(s) with the desired behavior (fields and methods); multiple inheritance is possible through embedding various types.
+
+3. Polymorphism: via interfaces in which a variable of a type can be assigned to a variable of any interface it implements. Types and interfaces are loosely coupled; again, multiple inheritance is possible through implementing various interfaces. Go’s interfaces aren’t a variant on Java or C# interfaces, they’re much more. They are independent and are key to large-scale programming and adaptable, evolutionary desig
